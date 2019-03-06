@@ -1,0 +1,13 @@
+1、从ltem-add.jsp中找到选择目录，因为本文件中没有使用selectItemCat，故跟踪js找到selectItemCat的使用位置
+2、创建数据库
+3、JPA
+4、前台访问方法改为GET
+5、在ItemCat类中新加方法
+//为了easyui的tree显示，添加text属性    
+    public String getText() {
+		return this.getName();
+	}
+  //tree组件显示文件夹还是文件，closed文件夹，open文件
+    public String getState() {
+    	return this.getIsParent()?"closed":"open";
+    }

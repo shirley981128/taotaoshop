@@ -1,0 +1,11 @@
+1、模板思想
+2、在数据库新建两张表tb_item_param和tb_item_param_item
+3、新建两个pojo：ItemParam和ItemParamItem
+4、新建两个继承通用Mapper的mapper：ItemParamItemMapper和ItemParamMapper
+5、新建两个service
+6、新建两个controller
+7、编写item-param-add.jsp和根据状态码编写处理方法。
+8、编写逻辑，若类目模板已存在，则提示：该类目已经添加，请选择其他类目。否则可新增模板，保存在tb_item_param中。
+9、编写查询方法，显示规格参数模板
+10、在新增商品中调用已有的规格参数模板，写入的数据保存在数据库表tb_item_param_item中
+11、规格参数回显：ItemParamItemController写响应

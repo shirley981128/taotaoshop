@@ -1,0 +1,3 @@
+1、商品表结构、数据库的优化：将经常修改和不经常修改的数据做分离.
+2、编写Item-add.jsp。完善商品标题、卖点、价格、库存数量、图片、描述等tag。
+3、实现：ItemController、ItemDescController和相应的mapper、pojo

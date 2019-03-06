@@ -1,0 +1,10 @@
+1、构造数据
+2、修改js
+3、新建包com.taotao.manage.controller.api(对外提供服务的controller
+4、新建Controller @Controller
+@RequestMapping("api/item/cat")
+public class ApiItemCatController(){};
+5、定义ItemCatReult和ItemCatData,导入jackson依赖
+6、编写查询服务
+7、使用jsonp跨域请求数据
+8、统一支持jsonp：新建包com.taotao.common.spring.exetend.converter.json，修改spring的消息转换器

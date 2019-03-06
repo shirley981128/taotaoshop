@@ -1,0 +1,9 @@
+1、根据状态码写处理方法
+2、public Boolean updateItem(Item item, String desc) {
+		Integer count1 =super.updateSelective(item);
+		ItemDesc itemDesc=new ItemDesc();
+		itemDesc.setItemId(item.getId());
+		itemDesc.setItemDesc(desc);
+		Integer count2 =this.itemDescService.updateSelective(itemDesc);
+		return count1.intValue() == 1 && count2.intValue() == 1;
+	}

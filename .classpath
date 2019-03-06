@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="taotao-common/src/main/java"/>
+	<classpathentry kind="src" path="taotao-manage-mapper/src/main/java"/>
+	<classpathentry kind="src" path="taotao-manage-web/src/main/java"/>
+	<classpathentry kind="src" path="taotao-manage-web/target/tomcat/work/Tomcat/localhost/_"/>
+	<classpathentry kind="src" path="taotao-manage/taotao-manage-pojo/src/main/java"/>
+	<classpathentry kind="src" path="taotao-manage/taotao-manage-service/src/main/java"/>
+	<classpathentry kind="src" path="taotao-web/src/main/java"/>
+	<classpathentry kind="src" path="taotao-web/target/tomcat/work/Tomcat/localhost/_"/>
+	<classpathentry kind="lib" path="taotao-common/target/taotao-common.jar"/>
+	<classpathentry kind="lib" path="taotao-manage-web/src/main/webapp/js/kindeditor-4.1.10/jsp/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="taotao-manage-web/src/main/webapp/js/kindeditor-4.1.10/jsp/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="taotao-manage-web/src/main/webapp/js/kindeditor-4.1.10/jsp/lib/json_simple-1.1.jar"/>
+	<classpathentry kind="output" path="taotao-common/target/classes"/>
+</classpath>

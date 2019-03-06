@@ -1,0 +1,12 @@
+1、在service包里新建抽象类BaseService，方法
+①、	queryById
+②、	queryAll
+③、	queryOne
+④、	queryListByWhere
+⑤、	queryPageListByWhere
+⑥、	save
+⑦、	update
+⑧、	deleteById
+⑨、	deleteByIds
+⑩、	deleteByWhere
+

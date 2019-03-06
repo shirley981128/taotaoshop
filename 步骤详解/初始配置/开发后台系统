@@ -1,0 +1,34 @@
+开发后台系统taotao-manage
+
+1、使用Maven的聚合创建子工程
+Com.taotao.manage.pojo  
+Com.taotao.manage.mapper  
+Com.taotao.manage.service  
+Com.taotao.manage.controller  
+2、创建Maven Project taotao-manage继承于taotao-parent  
+3、在taotao-parent下创建Maven Module taotao-manage-pojo、taotao-manage-mapper、taotao-manage-service、taotao-manage-web
+4、子工程之间的依赖关系Taotao-manage-web → taotao-manage-service → taotao-manage-mapper → taotao-manage-pojo  
+5、导入依赖  
+导入依赖的原则：  
+①所有的工程都需要的依赖应该在聚合工程（taotao-manage）中导入。  
+②在使用依赖的最底层导入。  
+③运行时所需要的依赖在web工程中加入。  
+junit导入manage（所有子工程共用）  
+spring-webmvc导入service（service和web使用）  
+spring-jdbc和spring-aspects导入web中  
+mybatis导入mapper中  
+mybatis-spring导入web中  
+分页助手导入service中  
+通用mapper导入mapper中  
+persistence-api（JPA依赖）导入pojo中，在mapper中排除JPA依赖，由pojo传递  
+mysql-connector-java导入web中  
+jackson-databind导入service中  
+bonecp-spring导入web中  
+jsp相关依赖导入web中  
+slf4j-log4j12导入manage
+Apache工具组件导入manage中（所有子工程共用）  
+6、配置Tomcat插件（从parent导入manage中（聚合工程一定要在聚合之后运行））：port：8081（不能使用默认80，因为分布式所有的模块不可能都用80），path：/
+7、运行
+将parent Maven Install到本地仓库
+配置Maven Build,选择manage工程，取名manage.taotao.com（二级域名）
+gaols：tomcat7：run

@@ -1,0 +1,3 @@
+1、在webapp中创建views文件夹
+2、向views文件夹中导入jsp静态页面
+3、向webapp中导入commons，css，js

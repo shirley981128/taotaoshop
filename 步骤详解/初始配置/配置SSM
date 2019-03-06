@@ -1,0 +1,8 @@
+1、在resources目录下创建spring和mybatis两个目录  
+2、在mybatis目录下创建mappers目录
+3、在resources目录下配置jdbc和log4j
+4、在spring下配置ApplicationContext.xml、ApplicationContext-transaction.xml、taotao-manage-servlet.xml、ApplicationContext-mybatis.xml
+5、在taotao-manage-service下创建service包（web依赖于service）
+6、在taotao-manage-web下创建com.taotao.manage.controller包
+7、在taotao-manage-mapper创建com.taotao.manage.mapper包
+8、在taotao-manage-pojo创建com.taotao.manage.pojo包

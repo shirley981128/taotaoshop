@@ -1,0 +1,4 @@
+创建taotao-common目的：抽取分布式系统架构中公用的类或属性  
+
+1、创建taotao-common Maven Project
+2、继承于taotao-parent
