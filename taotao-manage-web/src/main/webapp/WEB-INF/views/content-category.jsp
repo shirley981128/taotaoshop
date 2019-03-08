@@ -12,9 +12,9 @@
 <script type="text/javascript">
 $(function(){
 	$("#contentCategory").tree({
-		url : '/rest/content/category',
+		url : "/rest/content/category",
 		animate: true,
-		method : "GET",
+		method : "get",
 		onContextMenu: function(e,node){
             e.preventDefault();
             $(this).tree('select',node.target);
