@@ -1,0 +1,6 @@
+1、在taotao-web里编写ItemService和ItemController
+2、新建com.taotao.web.bean
+3、新建Item类继承com.taotao.manage.pojo.Item
+4、在ItemController/ItemService里查询商品详情
+5、新建ApiItemDescController
+6、显示规格参数,新建ApiItemParamItemController，在ItemController/ItemService里编写逻辑

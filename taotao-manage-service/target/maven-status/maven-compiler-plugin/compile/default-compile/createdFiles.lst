@@ -1,0 +1,16 @@
+com\taotao\manage\service\ItemService.class
+com\taotao\manage\service\ItemParamService.class
+com\taotao\manage\service\PropertiesService.class
+com\taotao\manage\service\ItemCatService.class
+com\taotao\manage\service\ItemDescService.class
+com\taotao\manage\service\RedisService$3.class
+com\taotao\manage\service\RedisService$2.class
+com\taotao\manage\service\ItemParamItemService.class
+com\taotao\manage\service\BaseService.class
+com\taotao\manage\service\ContentCategoryService.class
+com\taotao\manage\service\RedisService$4.class
+com\taotao\manage\service\RedisService$1.class
+com\taotao\manage\service\RedisService$5.class
+com\taotao\manage\service\RedisService.class
+com\taotao\manage\service\ContentService.class
+com\taotao\manage\service\Function.class

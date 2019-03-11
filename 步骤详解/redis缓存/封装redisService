@@ -1,0 +1,3 @@
+1、在taotao-manage-service的pom.xml里导入jedis依赖
+2、jedis整合spring
+3、封装redisService(借助一个function接口优化）

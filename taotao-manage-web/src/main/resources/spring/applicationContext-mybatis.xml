@@ -13,8 +13,8 @@
 		<!-- 配置mybatis全局配置文件 -->
 		<property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
 		<!-- 配置mapper.xml文件 -->
-		<!-- <property name="mapperLocations" value="classpath:mybatis/mappers/*.xml"/> -->
-	<!-- 别名包 -->
+		<property name="mapperLocations" value="classpath:mybatis/mappers/*.xml"/> 	
+		<!-- 别名包 -->
 		<property name="typeAliasesPackage" value="com.taotao.manage.pojo"/>
 	</bean>
 	

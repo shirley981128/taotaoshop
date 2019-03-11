@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<div>
-	 <ul id="contentCategory" class="easyui-tree">
-    </ul>
-</div>
+<table id="contentCategoryTree" class="easyui-tree">
+</table>
 <div id="contentCategoryMenu" class="easyui-menu" style="width:120px;" data-options="onClick:menuHandler">
     <div data-options="iconCls:'icon-add',name:'add'">添加</div>
     <div data-options="iconCls:'icon-remove',name:'rename'">重命名</div>
@@ -11,10 +9,10 @@
 </div>
 <script type="text/javascript">
 $(function(){
-	$("#contentCategory").tree({
-		url : "/rest/content/category",
-		animate: true,
-		method : "get",
+	$("#contentCategoryTree").tree({
+		url:"/rest/content/category",
+		animate:true,
+		method:"get",
 		onContextMenu: function(e,node){
             e.preventDefault();
             $(this).tree('select',node.target);
