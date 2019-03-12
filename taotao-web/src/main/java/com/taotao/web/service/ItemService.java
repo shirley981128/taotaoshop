@@ -13,6 +13,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.taotao.common.service.ApiService;
 import com.taotao.common.service.RedisService;
 import com.taotao.manage.pojo.ItemDesc;
 import com.taotao.manage.pojo.ItemParamItem;
@@ -32,9 +33,9 @@ public class ItemService {
 	@Autowired
 	private RedisService redisService;
 	
-	private static final String REDIS_KEY ="taotao_web_item_detail_";
+	public static final String REDIS_KEY ="TAOTAO_WEB_ITEM_DETAIL_";
 	
-	private static final Integer REDIS_TIME =60*60*24;
+	public static final Integer REDIS_TIME =60*60*24;
 	/**
 	 * 根据商品id查询商品数据<br/>
 	 * 通过后台系统提供的接口服务进行查询

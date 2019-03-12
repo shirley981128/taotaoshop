@@ -1,0 +1,2 @@
+1、写注册方法doRegister
+2、导入加密依赖commons-codec为注册密码加密

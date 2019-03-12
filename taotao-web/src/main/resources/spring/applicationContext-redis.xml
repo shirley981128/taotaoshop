@@ -18,8 +18,8 @@
 		<constructor-arg index="1">
 			<list>
 				<bean class="redis.clients.jedis.JedisShardInfo">
-					<constructor-arg index="0" value="${redis.node1.host}"/>
-					<constructor-arg index="1" value="${redis.node1.port}"/>
+					<constructor-arg name="host" value="${redis.node1.host}"/>
+					<constructor-arg name="port" value="${redis.node1.port}"/>
 				</bean>
 			</list>
 		</constructor-arg>	

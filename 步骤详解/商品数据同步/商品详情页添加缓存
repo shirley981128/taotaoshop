@@ -1,0 +1,3 @@
+1、将jedis依赖导入前台maven
+2、将jedis与spring的整合文件导入taotao-web
+3、将RedisService通用（放入taotao-common）并对taotao-caommon导入jedis依赖

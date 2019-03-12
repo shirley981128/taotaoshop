@@ -1,0 +1,14 @@
+方案：
+1、	将taotao-web中的js和css拷贝到taotao-sso中
+a)	好处：简单、方便
+b)	缺点：重复、对用户而言需要重复加载
+2、	将taotao-sso中的引用指向www.taotao.com
+a)	好处：对用户而言只需要加载一次即可
+b)	缺点：修改页面
+3、	需要通过nginx访问静态资源，JS、CSS、Image。
+a)	好处：避免携带一些无用的cookie
+具体实现：
+1、	使用新域名访问静态资源 static.taotao.com
+2、	拷贝JS和CSS到磁盘路径中
+3、	配置nginx
+

@@ -13,16 +13,15 @@ public class RedisService {
     private ShardedJedisPool shardedJedisPool;
 
     private <T> T execute(Function<T, ShardedJedis> fun) {
-        ShardedJedis shardedJedis = null;
+    	// 从连接池中获取到jedis分片对象
+        ShardedJedis shardedJedis = shardedJedisPool.getResource();
         try {
-            // 从连接池中获取到jedis分片对象
-            shardedJedis = shardedJedisPool.getResource();
             return fun.callback(shardedJedis);
         } finally {
-            if (null != shardedJedis) {
+//            if (null != shardedJedis) {
                 // 关闭，检测连接是否有效，有效则放回到连接池中，无效则重置状态
                 shardedJedis.close();
-            }
+//            }
         }
     }
 

@@ -1,0 +1,5 @@
+1、在前台系统中创建一个接口，后台系统更新数据的时候调用这个接口即达到通知的目的
+2、在com.taotao.web.controller中创建ItemCacheController
+3、将ApiService放到common里共用，修改spring整合文件。
+在后台的ItemService里实现通知逻辑（需要导入httpclient相关的依赖并将httpclient包从前台系统移至common）
+4、在后台系统中导入spring与httpclient的整合文件

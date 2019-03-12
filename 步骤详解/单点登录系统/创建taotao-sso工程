@@ -1,0 +1,7 @@
+1、创建工程
+2、导入依赖
+3、配置web.xml文件
+4、配置SSM
+5、导入静态页面
+6、编写注册逻辑UserController
+7、修改host和nginx
